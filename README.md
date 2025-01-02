@@ -8,16 +8,11 @@
 
 0から99までの単純な直線グラフを描画するサンプルです。
 
-### toio 3Dモデル
-
-toioのIMUから取得した姿勢角データを使って3Dモデルを回転させるサンプルです。
-
 ## 動作環境
 
 - Python 3.12
 - uv
 - rerun-sdk
-- toio-py (toio 3Dモデルのサンプルのみ)
 
 ## セットアップ
 
@@ -29,7 +24,6 @@ uv init
 
 # 依存パッケージのインストール
 uv add rerun-sdk
-uv add toio-py  # toio 3Dモデルのサンプルを実行する場合のみ
 
 # 仮想環境の有効化
 . .venv/bin/activate  # Linux/Mac
@@ -45,25 +39,15 @@ uv add toio-py  # toio 3Dモデルのサンプルを実行する場合のみ
 python examples/simple_graph/plot_graph.py
 ```
 
-### toio 3Dモデル
-
-``` bash
-python examples/toio_3d/posture.py
-```
-
 ## ディレクトリ構成
 
 ``` plaintext
 rerun-examples/
 ├── README.md                    # このファイル
 ├── examples/
-│   ├── simple_graph/           # 単調増加グラフのサンプル
-│   │   ├── README.md
-│   │   └── plot_graph.py
-│   └── toio_3d/               # toio 3Dモデルのサンプル
+│   └── simple_graph/           # 単調増加グラフのサンプル
 │       ├── README.md
-│       ├── posture.py
-│       └── toiocorecube_v003.gltf
+│       └── plot_graph.py
 └── .gitignore
 ```
 
