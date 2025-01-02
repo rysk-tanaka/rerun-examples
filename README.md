@@ -8,6 +8,13 @@
 
 0から99までの単純な直線グラフを描画するサンプルです。
 
+### IOTセンサーシミュレーション
+
+温度センサーと位置情報を持つIOTデバイスをシミュレートし、リアルタイムでデータを可視化するサンプルです。
+
+- 温度データの時系列表示
+- センサーの3D位置表示
+
 ## 動作環境
 
 - Python 3.12
@@ -31,23 +38,18 @@ uv add rerun-sdk
 .\.venv\Scripts\activate  # Windows
 ```
 
-## サンプルの実行方法
-
-### 単調増加グラフ
-
-``` bash
-python examples/simple_graph/plot_graph.py
-```
-
 ## ディレクトリ構成
 
 ``` plaintext
 rerun-examples/
 ├── README.md                    # このファイル
 ├── examples/
-│   └── simple_graph/           # 単調増加グラフのサンプル
+│   ├── simple_graph/           # 単調増加グラフのサンプル
+│   │   ├── README.md
+│   │   └── plot_graph.py
+│   └── iot_sensor/            # IoTセンサーのサンプル
 │       ├── README.md
-│       └── plot_graph.py
+│       └── sensor_sim.py
 └── .gitignore
 ```
 
